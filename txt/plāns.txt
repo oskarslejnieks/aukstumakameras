@@ -1,0 +1,18 @@
+1. Headers būs pa vidu
+
+2. Pasteļkrāsas(?)
+
+3. Main daļa kā -> Kursa Darbs/veikals
+
+4. Interaktīvs
+
+5. Par mums / *Veikals / Kontakti
+
+ - Veikals (Polairs (aukstumakameras))
+
+---------------------------------------
+6. Headers nāk līdzi, kad skrullē uz leju. Nomaina krāsu
+
+7. Veikala Items palecas uz :hover
+
+8. Zem katra produkta Izvēle (pamatinfomācija?, sīkāka informācija)
