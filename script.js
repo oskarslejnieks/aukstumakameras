@@ -12,12 +12,14 @@ openModalButtons.forEach(button => {
   });
 });
 
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active');
-  modals.forEach(modal => {
-    closeModal(modal);
+if (overlay) {
+  overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active');
+    modals.forEach(modal => {
+      closeModal(modal);
+    });
   });
-});
+}
 
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -41,12 +43,14 @@ function closeModal(modal) {
 
 
 var MenuItems=document.getElementById("mySidenav");
+if (MenuItems) {
   MenuItems.style.width="0px";
+}
     function menutoggle(){
-      if(MenuItems.style.width == "0px"){
+      if(MenuItems && MenuItems.style.width == "0px"){
           MenuItems.style.width = "100%";
       }
-      else{
+      else if(MenuItems){
           MenuItems.style.width = "0px";
       }
 } 
@@ -59,6 +63,7 @@ const slider = document.querySelector(".slider");
     const numberOfSlides = slides.length;
     var slideNumber = 0;
 
+    if (nextBtn && prevBtn && slider && numberOfSlides > 0) {
     //image slider next button
     nextBtn.addEventListener("click", () => {
       slides.forEach((slide) => {
@@ -130,6 +135,7 @@ const slider = document.querySelector(".slider");
     slider.addEventListener("mouseout", () => {
       repeater();
     });
+    }
 
     window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
